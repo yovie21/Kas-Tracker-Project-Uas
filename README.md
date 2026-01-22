@@ -23,7 +23,7 @@ Sistem keamanan menggunakan validasi akun untuk menjaga privasi data keuangan.
 
 | Login | Register (Multi-Role) |
 |---|---|
-| <img src="pict/Login.png" width="400"> | <img src="pict/RegisterMultiRole.png" width="400"> |
+| <img src="backend/pict/Login.png" width="400"> | <img src="backend/pict/RegisterMultiRole.png" width="400"> |
 
 > **Catatan:** User dapat mendaftar sebagai Admin atau User biasa tergantung kebutuhan sistem.
 
