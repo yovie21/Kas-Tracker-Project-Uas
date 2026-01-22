@@ -34,12 +34,12 @@ Admin memiliki kontrol penuh untuk memantau aktivitas sistem dan manajemen data 
 
 **Dashboard Admin Overview**
 <p align="center">
-  <img src="pict/DashboardAdmin.png" width="80%">
+  <img src="backend/pict/DashboardAdmin.png" width="80%">
 </p>
 
 **Manajemen Data (CRUD)**
 <p align="center">
-  <img src="pict/CrudAdmin.png" width="80%">
+  <img src="backend/pict/CrudAdmin.png" width="80%">
 </p>
 
 ---
@@ -49,12 +49,12 @@ Tampilan yang disederhanakan untuk membantu user fokus pada pencatatan keuangan 
 
 **Dashboard User**
 <p align="center">
-  <img src="pict/DashboardUser.png" width="80%">
+  <img src="backend/pict/DashboardUser.png" width="80%">
 </p>
 
 **Riwayat Transaksi**
 <p align="center">
-  <img src="pict/History.png" width="80%">
+  <img src="backend/pict/History.png" width="80%">
 </p>
 
 ---
