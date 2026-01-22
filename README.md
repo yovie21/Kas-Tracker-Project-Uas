@@ -70,7 +70,7 @@ Tampilan yang disederhanakan untuk membantu user fokus pada pencatatan keuangan 
 
 1. Clone repositori ini:
    ```bash
-   git clone [https://github.com/username/Personal-Expense-Api.git](https://github.com/username/Personal-Expense-Api.git)
+   git clone https://github.com/yovie21/Kas-Tracker-Project-Uas.git
 
 2. Setup Backend (Laravel)
    -Jalankan Apache dan MySQL melalui XAMPP
