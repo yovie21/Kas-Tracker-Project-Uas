@@ -1,5 +1,89 @@
+/* Styling Umum untuk Halaman Auth (Login/Register) */
+body {
+    /* Pastikan body rata tengah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f7fa; /* Background lembut */
+}
+
+.auth-form-container {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Shadow yang elegan */
+    max-width: 400px;
+    width: 90%;
+}
+
+.auth-title {
+    color: #34495e;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.auth-subtitle {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* Styling Input Modern */
+.input-group-modern .form-control,
+.input-group-modern .form-select {
+    height: 48px;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fcfcfc;
+}
+
+.input-group-modern .form-control:focus,
+.input-group-modern .form-select:focus {
+    border-color: #5c6fff; /* Warna fokus */
+    box-shadow: 0 0 0 3px rgba(92, 111, 255, 0.2);
+    background-color: #ffffff;
+}
+
+.form-label {
+    display: none; /* Menyembunyikan label, diganti placeholder */
+}
+
+/* Styling Tombol Modern */
+.btn-primary {
+    background: linear-gradient(90deg, #5c6fff, #535bf2);
+    border: none;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px); /* Efek interaktif saat hover */
+    box-shadow: 0 4px 12px rgba(92, 111, 255, 0.3);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.auth-link {
+    color: #5c6fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.auth-link:hover {
+    color: #535bf2;
+    text-decoration: underline;
+}
+
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -39,4 +123,59 @@
 
 .read-the-docs {
   color: #888;
+}
+/* ================================================= */
+/* Tambahan Media Query untuk Responsivitas Mobile */
+/* ================================================= */
+
+@media (max-width: 768px) {
+    /* --------------------------------- */
+    /* Membuat Tabel Daftar Pemasukan/Pengeluaran Responsif (Scroll Horizontal) */
+    /* --------------------------------- */
+    
+    /* Wrapper ini harus membungkus tag <table> Anda di komponen IncomeList/ExpenseList */
+    .table-responsive-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 8px; 
+    }
+
+    .table {
+        /* Memastikan tabel cukup lebar agar data tidak pecah */
+        min-width: 650px; /* Atur lebar minimum yang masuk akal */
+        margin-bottom: 0;
+    }
+    
+    .table th, .table td {
+        padding: 0.5rem 0.4rem; /* Padding lebih kecil */
+        font-size: 0.8rem; /* Font lebih kecil */
+        white-space: nowrap; /* Mencegah teks memecah baris */
+    }
+    
+    /* --------------------------------- */
+    /* Penyesuaian Visual Umum Dashboard */
+    /* --------------------------------- */
+    
+    /* Mengurangi padding container utama di mobile */
+    .app-container {
+        padding: 12px 12px; /* Padding lebih kecil untuk mobile */
+    }
+
+    /* Mengurangi padding kartu dashboard */
+    .dashboard-card, .form-card, .summary-card {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    /* Membuat kartu saldo utama lebih ringkas */
+    .header-row {
+        /* Aturan ini sudah ada, pastikan efektif */
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    /* Kartu Balances di dashboard utama harus stack di mobile */
+    /* Jika Anda menggunakan Bootstrap col-6, pastikan Anda menggunakan col-12 col-md-6 */
+    /* Di sini kita berasumsi .summary-card ada di dalam grid row */
 }
